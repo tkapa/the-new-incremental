@@ -11,8 +11,19 @@ config_version=5
 [application]
 
 config/name="the-clicker"
+run/main_scene="uid://bws7i4yhbvj82"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+SignalBus="*uid://b5oaw4i541w3o"
+CurrencyManager="*uid://cbjqlwde5uboj"
+
+[display]
+
+window/size/viewport_width=320
+window/size/viewport_height=180
 
 [physics]
 

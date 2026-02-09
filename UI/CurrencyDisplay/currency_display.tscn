@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cwne85aolpv22"]
+
+[ext_resource type="Script" uid="uid://dv8wjhtaji22" path="res://UI/CurrencyDisplay/currency_display.gd" id="1_71nsh"]
+[ext_resource type="PackedScene" uid="uid://gwlxr5pqpb0k" path="res://Components/CurrencyTrackerComponent/currency_tracker_component.tscn" id="1_ofllk"]
+
+[node name="CurrencyDisplay" type="Control" unique_id=1122420170]
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+size_flags_vertical = 4
+script = ExtResource("1_71nsh")
+metadata/_edit_group_ = true
+
+[node name="CurrencyTrackerComponent" parent="." unique_id=469978171 instance=ExtResource("1_ofllk")]
+
+[node name="CurrencyText" type="Label" parent="." unique_id=1562467434]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "100000"

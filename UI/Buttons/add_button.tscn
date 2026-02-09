@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://crgr7ijoojyjm"]
+
+[ext_resource type="Script" uid="uid://b3d5a4pb28ar6" path="res://UI/Buttons/add_button.gd" id="1_7vvl7"]
+
+[node name="AddButton" type="Button" unique_id=1460473266]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Click Me"
+script = ExtResource("1_7vvl7")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]

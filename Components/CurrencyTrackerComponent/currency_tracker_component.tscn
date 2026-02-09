@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://gwlxr5pqpb0k"]
+
+[ext_resource type="Script" uid="uid://drthxulo1xd6p" path="res://Components/CurrencyTrackerComponent/currency_tracker_component.gd" id="1_chmcn"]
+
+[node name="CurrencyTrackerComponent" type="Node" unique_id=469978171]
+script = ExtResource("1_chmcn")
