@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cr85q14elm3h3"]
+
+[ext_resource type="Script" uid="uid://ffgmqj7s4mdw" path="res://Components/CurrencySpenderComponent/currency_spender_component.gd" id="1_ndemd"]
+
+[node name="CurrencySpenderComponent" type="Node" unique_id=1625921281]
+script = ExtResource("1_ndemd")

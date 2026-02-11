@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cyk41ogawfr7i"]
+
+[ext_resource type="Script" uid="uid://dghp7nvntuo46" path="res://Components/TickTrackerComponent/tick_tracker_component.gd" id="1_gq0e7"]
+
+[node name="TickTrackerComponent" type="Node" unique_id=1430309522]
+script = ExtResource("1_gq0e7")
