@@ -17,4 +17,4 @@ func _remove_currency(value: int):
 	SignalBus.currency_updated.emit(current_currency)
 
 func can_afford(value: int) -> bool:
-	return value >= current_currency
+	return value <= current_currency

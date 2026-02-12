@@ -2,11 +2,14 @@
 
 [ext_resource type="Script" uid="uid://dv8wjhtaji22" path="res://UI/CurrencyDisplay/currency_display.gd" id="1_71nsh"]
 [ext_resource type="PackedScene" uid="uid://gwlxr5pqpb0k" path="res://Components/CurrencyTrackerComponent/currency_tracker_component.tscn" id="1_ofllk"]
+[ext_resource type="Theme" uid="uid://blo2wchsj3d36" path="res://UI/global_theme.tres" id="3_ofqa3"]
 
 [node name="CurrencyDisplay" type="Control" unique_id=1122420170]
+custom_minimum_size = Vector2(0, 30)
 layout_mode = 3
 anchors_preset = 10
 anchor_right = 1.0
+offset_bottom = 20.0
 grow_horizontal = 2
 size_flags_vertical = 4
 script = ExtResource("1_71nsh")
@@ -15,7 +18,16 @@ metadata/_edit_group_ = true
 [node name="CurrencyTrackerComponent" parent="." unique_id=469978171 instance=ExtResource("1_ofllk")]
 
 [node name="CurrencyText" type="Label" parent="." unique_id=1562467434]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_ofqa3")
 text = "100000"
+horizontal_alignment = 1
+vertical_alignment = 1

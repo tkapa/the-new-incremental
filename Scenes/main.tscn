@@ -1,16 +1,9 @@
 [gd_scene format=3 uid="uid://bws7i4yhbvj82"]
 
-[ext_resource type="PackedScene" uid="uid://cwne85aolpv22" path="res://UI/CurrencyDisplay/currency_display.tscn" id="1_jjgbg"]
-[ext_resource type="PackedScene" uid="uid://crgr7ijoojyjm" path="res://UI/Buttons/add_button.tscn" id="2_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://djrorh4c5aof3" path="res://Scenes/ui_layout.tscn" id="1_jjgbg"]
 
 [node name="Main" type="Node2D" unique_id=2069147951]
 
-[node name="CurrencyDisplay" parent="." unique_id=1122420170 instance=ExtResource("1_jjgbg")]
+[node name="UI" type="CanvasLayer" parent="." unique_id=718613373]
 
-[node name="AddButton" parent="." unique_id=1460473266 instance=ExtResource("2_bo1nx")]
-offset_left = 81.0
-offset_top = 91.0
-offset_right = 154.0
-offset_bottom = 122.0
-size_flags_vertical = 4
-metadata/_edit_use_anchors_ = true
+[node name="UiLayout" parent="UI" unique_id=1007126164 instance=ExtResource("1_jjgbg")]

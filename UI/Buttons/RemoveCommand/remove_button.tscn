@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bvjxqtyfhndql"]
+
+[ext_resource type="Script" uid="uid://dml1c83ke17q8" path="res://UI/Buttons/RemoveCommand/remove_button.gd" id="1_h1iky"]
+[ext_resource type="PackedScene" uid="uid://cr85q14elm3h3" path="res://Components/CurrencySpenderComponent/currency_spender_component.tscn" id="2_nuvbs"]
+
+[node name="RemoveButton" type="Button" unique_id=222155180]
+text = "Buy Thing"
+script = ExtResource("1_h1iky")
+
+[node name="CurrencySpenderComponent" parent="." unique_id=1625921281 instance=ExtResource("2_nuvbs")]
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
+[connection signal="can_purchase" from="CurrencySpenderComponent" to="." method="_on_can_purchase"]

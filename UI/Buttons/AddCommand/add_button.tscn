@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://crgr7ijoojyjm"]
+
+[ext_resource type="Theme" uid="uid://blo2wchsj3d36" path="res://UI/global_theme.tres" id="1_5ttwe"]
+[ext_resource type="Script" uid="uid://b3d5a4pb28ar6" path="res://UI/Buttons/AddCommand/add_button.gd" id="1_7vvl7"]
+
+[node name="AddButton" type="Button" unique_id=1460473266]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -15.5
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("1_5ttwe")
+text = "Click Me"
+script = ExtResource("1_7vvl7")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]

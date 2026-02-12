@@ -1,6 +1,11 @@
 [gd_scene format=3 uid="uid://cr85q14elm3h3"]
 
 [ext_resource type="Script" uid="uid://ffgmqj7s4mdw" path="res://Components/CurrencySpenderComponent/currency_spender_component.gd" id="1_ndemd"]
+[ext_resource type="PackedScene" uid="uid://gwlxr5pqpb0k" path="res://Components/CurrencyTrackerComponent/currency_tracker_component.tscn" id="2_j6rva"]
 
 [node name="CurrencySpenderComponent" type="Node" unique_id=1625921281]
 script = ExtResource("1_ndemd")
+
+[node name="CurrencyTrackerComponent" parent="." unique_id=469978171 instance=ExtResource("2_j6rva")]
+
+[connection signal="currency_updated" from="CurrencyTrackerComponent" to="." method="_on_currency_tracker_component_currency_updated"]
