@@ -5,12 +5,11 @@ signal can_purchase(can_purchase:bool)
 var _value :int = 1000
 
 func set_value(new_value: int) -> void:
-	print_debug("Set new value ", new_value)
 	_value = new_value
 	_refresh()
 	
 func purchase() -> bool:
-	if (!can_purchase):
+	if (!_can_purchase()):
 		return false
 	
 	SignalBus.remove_currency.emit(_value)

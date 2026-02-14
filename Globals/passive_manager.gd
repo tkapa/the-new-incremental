@@ -8,7 +8,6 @@ func _init() -> void:
 	
 func _on_add_passive(passive: PurchasablePassive):
 	_passives.append(passive)
-	print_debug("Added Passive")
 
 func _on_tick():
 	for p in _passives:

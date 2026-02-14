@@ -21,7 +21,7 @@ func _on_button_down() -> void:
 	_purchase()
 
 func _purchase() -> void:
-	if(!currency_spender.purchase()):
+	if(disabled):
 		print_debug("Purchase Failed.")
 	
 	SignalBus.on_purchase.emit(purchasable)

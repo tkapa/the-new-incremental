@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cwne85aolpv22" path="res://UI/CurrencyDisplay/currency_display.tscn" id="2_k8481"]
 [ext_resource type="PackedScene" uid="uid://crgr7ijoojyjm" path="res://UI/Buttons/AddCommand/add_button.tscn" id="3_qi5iu"]
 [ext_resource type="PackedScene" uid="uid://bvjxqtyfhndql" path="res://UI/Buttons/BuyCommand/remove_button.tscn" id="4_ldva7"]
-[ext_resource type="Resource" uid="uid://cm8nmtvb58o0x" path="res://Resources/base_passive.tres" id="5_55vmc"]
+[ext_resource type="Resource" uid="uid://b7s5udw2q00g6" path="res://Resources/add_passive.tres" id="5_55vmc"]
 
 [node name="UiLayout" type="MarginContainer" unique_id=1007126164]
 custom_minimum_size = Vector2(100, 0)

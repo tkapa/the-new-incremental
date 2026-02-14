@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="PassiveAdd" format=3 uid="uid://b7s5udw2q00g6"]
+
+[ext_resource type="Script" uid="uid://mbptsam04o1g" path="res://Resources/Purchasables/passive_add.gd" id="1_1mqi2"]
+
+[resource]
+script = ExtResource("1_1mqi2")
+metadata/_custom_type_script = "uid://mbptsam04o1g"
