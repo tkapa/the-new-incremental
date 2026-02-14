@@ -1,6 +1,4 @@
-class_name Purchasable extends Resource
-
-enum Type { NONE, PASSIVE }
+class_name PurchasableBase extends Resource
 
 @export_category("Cost")
 @export 
@@ -13,8 +11,3 @@ var cost_increment : int = 1
 var name : String = "New Name"
 @export 
 var description : String = "Description"
-@export
-var _type : Type = Type.PASSIVE
-
-func get_type() -> Type:
-	return _type

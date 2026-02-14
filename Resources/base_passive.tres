@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PurchasablePassive" format=3 uid="uid://cm8nmtvb58o0x"]
+
+[ext_resource type="Script" uid="uid://blyq0d2rl57ej" path="res://Resources/Purchasables/purchasable_passive.gd" id="1_yyh44"]
+
+[resource]
+script = ExtResource("1_yyh44")
+base_cost = 10
+name = "My Thing"
+description = "Does a thing"
+metadata/_custom_type_script = "uid://blyq0d2rl57ej"

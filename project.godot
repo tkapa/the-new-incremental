@@ -20,6 +20,9 @@ config/icon="res://icon.svg"
 
 SignalBus="*uid://b5oaw4i541w3o"
 CurrencyManager="*uid://cbjqlwde5uboj"
+TickManager="*uid://crhk08ov6m3ow"
+PassiveManager="*uid://dokc4tfon2xth"
+PurchaseManager="*uid://c7pjwaqjkl2ds"
 
 [display]
 
