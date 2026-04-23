@@ -24,7 +24,7 @@ func _purchase() -> void:
 	if(disabled):
 		print_debug("Purchase Failed.")
 	
-	SignalBus.on_purchase.emit(purchasable)
+	currency_spender.purchase(purchasable)
 
 func _get_cost():
 	_value = purchasable.base_cost

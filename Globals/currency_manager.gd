@@ -11,10 +11,5 @@ func _add_currency(value: int):
 	SignalBus.currency_updated.emit(current_currency)
 
 func _remove_currency(value: int):
-	if (!can_afford(value)):
-		push_error("Could not afford.")
 	current_currency -= value
 	SignalBus.currency_updated.emit(current_currency)
-
-func can_afford(value: int) -> bool:
-	return value <= current_currency
